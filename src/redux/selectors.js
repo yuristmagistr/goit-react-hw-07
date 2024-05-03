@@ -5,7 +5,7 @@ export const selectIsLoading = (state) => state.contacts.isLoading;
 export const selectError = (state) => state.contacts.error;
 export const selectNameFilter = (state) => state.filters.name;
 
-// Мемоізований селектор для відфільтрованих контактів
+
 export const selectFilteredContacts = createSelector(
   [selectNameFilter, selectContacts],
   (filterContacts, contacts) =>

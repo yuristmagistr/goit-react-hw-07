@@ -10,11 +10,10 @@ import { useDispatch } from "react-redux";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
-  
+
   const handleDelete = () => {
     dispatch(deleteContact(contact.id));
   };
-  // eslint-disable-next-line no-unused-vars
   const { id, name, number } = contact;
   return (
     <div className={css.contactGroup}>
