@@ -10,7 +10,7 @@ const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
 
   return (
-    <div className={css["contactlistBox"]}>
+    <div className={css.contactBox}>
       {filteredContacts.map((contact) => (
         <Contact key={contact.id} contact={contact} />
       ))}
